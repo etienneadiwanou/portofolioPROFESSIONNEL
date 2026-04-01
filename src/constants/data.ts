@@ -1,0 +1,114 @@
+import {
+  Globe,
+  Shield,
+  Zap,
+  Layout,
+  Server,
+  Smartphone,
+  Database,
+  GitBranch,
+  Layers,
+} from 'lucide-react';
+
+export const SECTION_LABELS: Record<string, string> = {
+  hero: 'Accueil',
+  about: 'À propos',
+  skills: 'Compétences',
+  experience: 'Expériences',
+  projects: 'Projets',
+  contact: 'Contact',
+};
+
+export const SECTIONS = ['hero', 'about', 'skills', 'experience', 'projects', 'contact'];
+
+export const ABOUT_CARDS = [
+  {
+    icon: Globe,
+    title: 'Développement Web & Mobile',
+    description: 'Expertise en React, Next.js, Flutter pour créer des applications modernes et performantes',
+    gradient: 'from-blue-400 to-cyan-500',
+  },
+  {
+    icon: Shield,
+    title: 'Sécurité des Paiements',
+    description: 'Spécialiste en monétique avec une compréhension approfondie des systèmes de paiement sécurisés',
+    gradient: 'from-amber-400 to-yellow-500',
+  },
+  {
+    icon: Zap,
+    title: 'Transformation Numérique',
+    description: "Accompagnement dans la digitalisation des processus métier et l'innovation technologique",
+    gradient: 'from-emerald-400 to-green-500',
+  },
+];
+
+export const SKILLS = [
+  { title: 'Front-end', icon: Layout, skills: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript', 'Vue.js', 'React', 'Next.js'], gradient: 'from-blue-400 to-cyan-500' },
+  { title: 'Back-end', icon: Server, skills: ['Node.js', 'Prisma', 'Firebase', 'REST', 'SOAP'], gradient: 'from-emerald-400 to-green-500' },
+  { title: 'Mobile', icon: Smartphone, skills: ['Flutter', 'FlutterFlow', ], gradient: 'from-purple-400 to-pink-500' },
+  { title: 'Base de données', icon: Database, skills: ['MySQL', 'PostgreSQL', 'Firebase'], gradient: 'from-orange-400 to-red-500' },
+  { title: 'Méthodologies', icon: GitBranch, skills: ['UML', 'Design Patterns', 'Agile/Scrum'], gradient: 'from-amber-400 to-yellow-500' },
+  { title: 'Outils', icon: Layers, skills: ['Git', 'GitHub', 'Trello', 'Postman', 'Figma'], gradient: 'from-indigo-400 to-blue-500' },
+  { title: 'Automatisation', icon: Zap, skills: ['PowerShell', 'Python Scripts'], gradient: 'from-pink-400 to-rose-500' },
+  { title: 'Sécurité', icon: Shield, skills: ['Monétique', 'Systèmes de paiement', 'Cryptographie'], gradient: 'from-teal-400 to-cyan-500' },
+];
+
+export const EXPERIENCES = [
+  {
+    title: 'Développeur Web Indépendant',
+    period: "08/2025 – Aujourd'hui",
+    location: 'Cotonou',
+    achievements: [
+      "Développement d'une application web de gestion des factures (Next.js, React, Prisma)",
+      'Gestion des produits, création de factures, export PDF',
+      "Création d'un portfolio en HTML/CSS/JS",
+      "Prototypage d'une application mobile de gestion des prix du marché agricole",
+    ],
+    gradient: 'from-amber-400 to-yellow-500',
+    side: 'left',
+  },
+  {
+    title: "Stagiaire Technicien d'Exploitation Informatique",
+    period: '04/2025 – 06/2025',
+    location: 'Jericho, Cotonou',
+    achievements: [
+      "Prototypage d'une application mobile agricole avec Figma",
+      "Front-end Flutter pour l'application GLECHE",
+      'Application de signalisation des urgences au Bénin (Flutter, Node.js, Firebase)',
+      'Mise en réseau des équipements informatiques',
+    ],
+    gradient: 'from-emerald-400 to-green-500',
+    side: 'right',
+  },
+];
+
+export const PROJECTS = [
+  {
+    title: 'Application de Gestion de Factures',
+    description: 'Application web complète pour la gestion des produits et la création de factures avec export PDF. Interface moderne et intuitive.',
+    image: 'https://images.unsplash.com/photo-1625810765923-0814e674ed7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnZvaWNlJTIwbWFuYWdlbWVudCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3Njk4ODg0NzB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    tags: ['Next.js', 'React', 'Prisma', 'PDF'],
+    gradient: 'from-blue-400 to-cyan-500',
+  },
+  {
+    title: 'Application Mobile Agricole',
+    description: 'Application de gestion des prix du marché agricole permettant aux agriculteurs de suivre les tendances du marché en temps réel.',
+    image: 'https://images.unsplash.com/photo-1744230673231-865d54a0aba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyZSUyMG1vYmlsZSUyMGFwcCUyMGZhcm1lcnN8ZW58MXx8fHwxNzY5ODg4NDcyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    tags: ['Flutter', 'Figma', 'Mobile'],
+    gradient: 'from-emerald-400 to-green-500',
+  },
+  {
+    title: 'Application de Signalisation des Urgences',
+    description: 'Plateforme mobile pour la signalisation rapide des urgences au Bénin avec géolocalisation et notification en temps réel.',
+    image: 'https://images.unsplash.com/photo-1726056652582-7c9d202d4018?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBwYXltZW50JTIwdGVjaG5vbG9neSUyMGZpbnRlY2h8ZW58MXx8fHwxNzY5ODg4NDcxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    tags: ['Flutter', 'Node.js', 'Firebase'],
+    gradient: 'from-red-400 to-orange-500',
+  },
+  {
+    title: 'Portfolio Personnel',
+    description: 'Site portfolio professionnel créé avec HTML, CSS et JavaScript pour présenter mes compétences et réalisations.',
+    image: 'https://images.unsplash.com/photo-1760278041881-e64e501d009c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBjbGVhbiUyMG1pbmltYWx8ZW58MXx8fHwxNzY5ODg4NDcwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    gradient: 'from-amber-400 to-yellow-500',
+  },
+];
