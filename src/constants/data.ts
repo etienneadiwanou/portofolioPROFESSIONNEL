@@ -25,7 +25,7 @@ export const ABOUT_CARDS = [
   {
     icon: Globe,
     title: 'Développement Web & Mobile',
-    description: 'Expertise en React, Next.js, Flutter pour créer des applications modernes et performantes',
+    description: 'Expertise en React, Next.js, Vue.js et Flutter pour créer des applications modernes et performantes',
     gradient: 'from-blue-400 to-cyan-500',
   },
   {
@@ -93,7 +93,7 @@ export const PROJECTS = [
   {
     title: 'Application Mobile Agricole',
     description: 'Application de gestion des prix du marché agricole permettant aux agriculteurs de suivre les tendances du marché en temps réel.',
-    image: 'https://images.unsplash.com/photo-1744230673231-865d54a0aba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyZSUyMG1vYmlsZSUyMGFwcCUyMGZhcm1lcnN8ZW58MXx8fHwxNzY5ODg4NDcyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjA4NTh8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyZSUyMGFwcHxlbnwwfHx8fDE3NzA0Nzc2MTQ&ixlib=rb-4.0.3&q=80&w=1080',
     tags: ['Flutter', 'Figma', 'Mobile'],
     gradient: 'from-emerald-400 to-green-500',
   },

@@ -22,9 +22,7 @@ export default function Navbar({ activeSection, mobileMenuOpen, onNavigate, onTo
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="flex items-center space-x-2"
           >
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center shadow-lg flex-shrink-0">
-              <span className="text-white font-bold text-sm">EA</span>
-            </div>
+           
             <span className="hidden sm:block text-gray-900 font-medium truncate">Etienne ADIWANOU</span>
           </motion.div>
 

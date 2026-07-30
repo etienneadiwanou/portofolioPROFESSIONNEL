@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
 import { fadeUp, staggerContainer } from '../../lib/animations';
+import ShatteredPortrait from './ShatteredPortrait';
 
 interface HeroProps {
   onNavigate: (id: string) => void;
@@ -8,11 +9,17 @@ interface HeroProps {
 
 export default function Hero({ onNavigate }: HeroProps) {
   return (
-    <section id="hero" className="pt-28 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8">
+    <section id="hero" className="pt-8 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-[3fr_2fr] gap-10 lg:gap-8 items-center">
-          <motion.div variants={staggerContainer} initial="hidden" animate="visible">
 
+          {/* Bloc texte : 2e sur mobile, 1ère colonne sur desktop */}
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+            className="order-2 lg:order-1"
+          >
             {/* Badge disponibilité */}
             <motion.div variants={fadeUp} custom={0}>
               <div className="inline-block px-4 py-2 rounded-full bg-white/80 backdrop-blur-xl border border-white/20 shadow-lg mb-6">
@@ -66,21 +73,9 @@ export default function Hero({ onNavigate }: HeroProps) {
             </motion.div>
           </motion.div>
 
-          {/* Image (desktop uniquement) */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9, x: 40 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mt-8 lg:mt-0 hidden lg:block"
-          >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
-                alt="Développeur au travail"
-                className="w-full h-[420px] object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-amber-500/20 to-transparent"></div>
-            </div>
+          {/* Photo : 1ère sur mobile, 2e colonne sur desktop */}
+          <motion.div className="order-1 lg:order-2 relative">
+            <ShatteredPortrait />
           </motion.div>
 
         </div>

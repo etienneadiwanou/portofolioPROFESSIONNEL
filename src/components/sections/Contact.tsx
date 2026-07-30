@@ -81,8 +81,8 @@ export default function Contact() {
               Envoyer un email
             </a>
             <a
-              href="/ETIENNECV.pdf"
-              download="ETIENNECV.pdf"
+              href="/CV_etienneADIWANOU.pdf"
+              download="CV_etienneADIWANOU.pdf"
               className="px-6 sm:px-8 py-3 sm:py-4 rounded-2xl bg-white/20 backdrop-blur-xl text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105 active:scale-95 flex items-center justify-center gap-2 border border-white/20 text-sm sm:text-base"
             >
               <Download className="w-4 h-4 sm:w-5 sm:h-5" />
