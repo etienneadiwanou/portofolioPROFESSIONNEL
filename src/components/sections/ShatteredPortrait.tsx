@@ -74,7 +74,7 @@ function ShatteredPortrait() {
         >
           {/* Image dimensionnée à la taille totale du conteneur, décalée pour ne montrer que ce fragment */}
           <img
-            src="/images/etienne.png"
+            src="/images/etienne.webp"
             alt="Menouwesso Etienne Adiwanou"
             className="absolute"
             style={{
