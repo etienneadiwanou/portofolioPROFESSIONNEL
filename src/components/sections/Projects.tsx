@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { ExternalLink, Github } from 'lucide-react';
 import { fadeUp, fadeLeft, fadeRight, staggerContainer, VP } from '../../lib/animations';
 import { PROJECTS } from '../../constants/data';
 
@@ -53,13 +54,30 @@ export default function Projects() {
                 <div className="p-5 sm:p-6">
                   <h3 className="text-base sm:text-xl mb-2 sm:mb-3 text-gray-900">{project.title}</h3>
                   <p className="text-sm sm:text-base text-gray-600 mb-4 leading-relaxed">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, i) => (
                       <span key={i} className="px-2 sm:px-3 py-1 rounded-full bg-gray-50 text-gray-700 text-xs sm:text-sm border border-gray-200">
                         {tag}
                       </span>
                     ))}
                   </div>
+
+                  {/* Lien vers le repo ou le site déployé */}
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r ${project.gradient} text-white text-xs sm:text-sm shadow-md hover:shadow-lg hover:opacity-90 transition-all`}
+                    >
+                      {project.linkLabel === 'GitHub' ? (
+                        <Github className="w-4 h-4" />
+                      ) : (
+                        <ExternalLink className="w-4 h-4" />
+                      )}
+                      {project.linkLabel}
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

@@ -84,11 +84,22 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: 'AdminFlow - Gestion Administrative',
+    description: "Plateforme web de centralisation et suivi des demandes administratives d'une organisation : gestion des utilisateurs, rôles et permissions, workflow de traitement, documents, affectations, validation/rejet et historique.",
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+    tags: ['Laravel', 'Vue.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'REST API'],
+    gradient: 'from-indigo-400 to-blue-500',
+    link: 'https://adminflow.alwaysdata.net/',
+    linkLabel: 'Voir le site',
+  },
+  {
     title: 'Application de Gestion de Factures',
     description: 'Application web complète pour la gestion des produits et la création de factures avec export PDF. Interface moderne et intuitive.',
     image: 'https://images.unsplash.com/photo-1625810765923-0814e674ed7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnZvaWNlJTIwbWFuYWdlbWVudCUyMGRhc2hib2FyZHxlbnwxfHx8fDE3Njk4ODg0NzB8MA&ixlib=rb-4.1.0&q=80&w=1080',
     tags: ['Next.js', 'React', 'Prisma', 'PDF'],
     gradient: 'from-blue-400 to-cyan-500',
+    link: 'https://github.com/etienneadiwanou/gestion-des-factures-',
+    linkLabel: 'GitHub',
   },
   {
     title: 'Application Mobile Agricole',
@@ -96,6 +107,8 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjA4NTh8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyZSUyMGFwcHxlbnwwfHx8fDE3NzA0Nzc2MTQ&ixlib=rb-4.0.3&q=80&w=1080',
     tags: ['Flutter', 'Figma', 'Mobile'],
     gradient: 'from-emerald-400 to-green-500',
+    link: '',
+    linkLabel: 'GitHub',
   },
   {
     title: 'Application de Signalisation des Urgences',
@@ -103,6 +116,8 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1726056652582-7c9d202d4018?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBwYXltZW50JTIwdGVjaG5vbG9neSUyMGZpbnRlY2h8ZW58MXx8fHwxNzY5ODg4NDcxfDA&ixlib=rb-4.1.0&q=80&w=1080',
     tags: ['Flutter', 'Node.js', 'Firebase'],
     gradient: 'from-red-400 to-orange-500',
+    link: 'https://github.com/etienneadiwanou/OHSECOURS',
+    linkLabel: 'GitHub',
   },
   {
     title: 'Portfolio Personnel',
@@ -110,5 +125,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1760278041881-e64e501d009c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2UlMjBjbGVhbiUyMG1pbmltYWx8ZW58MXx8fHwxNzY5ODg4NDcwfDA&ixlib=rb-4.1.0&q=80&w=1080',
     tags: ['HTML', 'CSS', 'JavaScript'],
     gradient: 'from-amber-400 to-yellow-500',
+    link: 'https://etienneadiwanou.netlify.app',
+    linkLabel: 'Voir le site',
   },
 ];
